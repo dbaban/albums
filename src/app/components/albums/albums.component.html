@@ -1,0 +1,11 @@
+<h4>Albums collection!</h4>
+<div class="row">
+    <div class="col-sm-4" *ngFor="let item of albums | async as list">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <a  [routerLink]="['/photos/',item.id]">{{item.title}}</a>
+          </div>
+        </div>
+      </div>
+</div>
